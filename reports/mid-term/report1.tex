@@ -1,0 +1,423 @@
+\documentclass[11pt]{report}
+\pagestyle{plain}
+\usepackage{geometry}
+\usepackage{graphicx}
+\geometry{
+    body={6.5in,9.5in},
+    left= 1.0in,
+    top = 0.5in}
+
+\begin{document}
+\author{ 
+		Avinash  Koyya\\
+			(Y9156) \\
+		avinashk@iitk.ac.in
+		\and	
+	    Diwakar Chauhan\\
+		    (Y9203)\\
+		   diwakarc@iitk.ac.in
+	    }
+\title{{\bf Learning to Detect Salient Object}\\ \vspace{10pt}
+			 { \normalsize {Mentor : \\ Prof. Amitabha Mukerjee \\ amit@cse.iitk.ac.in }}}
+\date{\today}
+\maketitle
+\newpage
+
+\section*{Abstract}
+
+The project aims to implement a solution to the salient object detection problem for images as proposed in \cite{mainpaper}.
+The problem is formulated as a binary labeling task where the salient object is separated from the background. A set of features, namely, multiscale contrast, center-surround histogram and color spatial distribution, are obtained to describe a salient object locally, regionally, and globally. 
+A conditional random field is learned to combine these features for salient object detection.
+The learning is done over a dataset of labelled images and the results thus obtained are put up.
+
+\section*{Introduction}
+
+The human brain and visual system pay more attention to some parts of an image. 
+Finding the regions of visual saliency or attention is of a great interest.
+Major applications for visual attention include automatic image cropping, adaptive image display on small devices, image/video compression, advertising design, and image collection browsing. 
+Visual attention helps object recognition, tracking, and detection as well. \\ \\
+\begin{minipage}{0.4\linewidth}
+\includegraphics[scale=0.2]{leaf.jpg}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+When the visual attention over an image is focused upon an 
+object in the image, the object gaining the attention 
+ is called the salient object or foreground objects. An example would be the leaf in the image shown.
+The paper \cite{mainpaper} studies one aspect of visual attention—salient object detection.\\
+\end{minipage}\\
+
+\section*{Related Work}
+
+Most of the visual attention models are mostly based on the low level features of image such as intensity, contrast and motion.\\
+There are three major steps in the evaluation of the saliency model: - \\
+1) Feature Extraction \\
+2) Saliency Map Computation\\
+3) Selectiong key locations\\
+\\
+Itti's model is based on the these steps. The low level features in his model are  Color, Intensity and orientation.\\
+Based on Itti's work, there is a toolbox in matlab named "saliencytoolbox".\\
+These approaches don't have notation of object in the image. For correct detection of
+salient object by these algorithm, either parameters are needed to set and these parameters
+ vary according to the type of object in the image or category of the object is required to know. Different type of salient object need different parameters for calculation. In our
+implementation we don't require prior information about the object in the image.\\
+%you can add some images that are in the paper showing the errors
+
+\begin{figure}
+\center \includegraphics[scale=0.7]{prev_work.jpg}
+\caption{Comparison of different algorithms. From left to right: Itti's Saliency Map,
+proposed approach, and ground truth.}
+\end{figure} 
+
+\section*{Formulation of Problem}
+The problem of finding salient object is formulated as follows:- \\
+For a given image $I$ of size $height$ x $width$, a binary mask $M$ of same size is calculated $i.e.$\\
+\begin{equation}
+M(i, j) = \{m_x  | m_x \in \{0, 1\}  \}
+\end{equation}
+This label $m_x $ indicates if pixel $x$ belongs to the salient object.
+
+\section*{Salient Object Features}
+These features are obtained to describe the local, regional and global properties of the image and thus incorporate them in the CRF learning. The method \cite{mainpaper} proposes three features.
+\begin{enumerate}
+\item Multi Scale Contrast 
+\item Center Surround Histogram
+\item Color Spacial Distribution
+\end{enumerate}
+
+\subsection*{Multi Scale Contrast}
+Human visual receptive fields are more sensitive to the intensity changes. Thus, sudden changes in the contrast across the image are likely to gain human attention.  Contrast feature is most commonly used feature in detection of salient object.
+
+\begin{figure}[h!]
+\center \includegraphics[scale=0.4]{pyramid.jpg}
+\caption{Intermediate Contrast Pyramid}
+\end{figure} 
+For each image a six level gaussian pyramid of image is obtained and contrast map for image at each level of pyramid is calculated. The maps thus obtained over the levels are then added to give the resultant Multi Scale Contrast map.
+
+\begin{equation}
+f_c(x,I) = \sum_{l=1}^{6}\sum_{x' \in N(x)} ||I^l(x) - I^l(x')|| ^2
+\end{equation}
+Here $N(x)$ is the set of 8 pixels surrounding the pixel $x$ and $l$ is the pyramid level in the image.\\
+The in the gaussain pyramid, images each level are obtained by applying gaussian filter in both direction in the image. The gaussian kernel used is: 0.05 0.25 0.4 0.25 0.05 \\
+
+%\begin{minipage}{0.4\linewidth}
+%Intermediate Contrast Pyramid\\
+%\includegraphics[scale=0.1]{pyramid.jpg}
+%\end{minipage}
+%\begin{minipage}{0.7\linewidth}
+%\end{minipage}\\
+
+\begin{figure}[h!]
+\begin{tabular}{cccc}
+%Images and their Multiscale output\\
+\includegraphics[scale=0.5]{4828.jpg} 
+& \includegraphics[scale=0.375]{4828msc.jpg}
+&
+\includegraphics[scale=0.5]{d.jpg} & \includegraphics[scale=0.375]{msc_df.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{Images and Their Multiscale Contrast output}
+\end{figure} 
+
+Multi Scale Contrast is a local feature of image. In this process the regions with similar colors are eliminated while the places where there is a large contrast change, are highlighted. Greater the change in contrast more highlighted is the region.
+
+\subsection*{Center Surround Histogram}
+The salient object usually has a larger extent than local contrast and can be distinguished from its surrounding context. 
+Therefore, a regional salient feature was proposed to identify the salient object based on how distinct it appears from its immediate surroundings. 
+
+\begin{figure}[h!]
+\center \includegraphics[scale=0.7]{csh_example.jpg} 
+\caption{Center-surround histogram
+distances with different locations and sizes.}
+\end{figure}
+
+Suppose the salient object is enclosed by a rectangle R.
+Construct a surrounding contour R$_S$ with the same area of R, as shown in the above figure. 
+To measure how distinct the salient object in the rectangle is with respect to its surroundings, the distance between R and R$_S$
+is taken to be the $\chi^2$ distance between histograms of RGB color: 
+
+\begin{equation}
+\chi^2(R,R_S) = \frac{1}{2} \sum \frac{(R^i -R^i_S)^2}{R^i + R^i_S}
+\end{equation}
+where $R^i$ is the histogram of rectangle R centered at pixel i.
+
+A histogram is an array of numbers in which each element, bin, corresponds to the frequency of a range of values in the given data. In this case, each bin counts the number of pixels having color values in the same range.
+We use histograms because they are a robust global description of appearance.
+They are insensitive to small changes in size, shape, and viewpoint. 
+The histogram of a rectangle with any location and size can be very quickly computed by means of an {\bf integral histogram} \cite{integralhistogram}.\\
+
+An integral histogram is a map from every pixel co-ordinate in an image to a RGB colour histogram of the rectangle cornered by the top-left corner of the image and the pixel co-ordinate itself. Such a map is composed, starting from the top-left corner, traversing first to right and then to the bottom  the value of the cumulative image at the current pixel is obtained by the addition of the left and the up pixel and subtraction of the upper left pixel’s cumulative values.This happens in O(height x width of image) operations.
+This makes it trivial to obtain the RGB colour histogram of a rectangle given by any co-ordinates, in the image in linear amount of computation.
+\begin{equation}
+hist_{rectangle} = hist_{bot-right} - hist_{bot-left} - hist_{top-right} + hist_{top-left}
+\end{equation}
+
+
+To handle varying aspect ratios of the object, five templates with different aspect ratios \{ 0.5 , 0.75, 1 .0, 1.5, 2.0 \} were used.
+The size range of the rectangle R(x) is set to [0.1, 0.7] (in  steps of 0.1) x min(width ,height of image).
+The most distinct rectangle, $R^*(x)$, centered at each pixel x by varying the size and aspect ratio:
+
+\begin{equation}
+R^*(x) = arg max_{R(x)} \chi^2(R(x),R_S(x))
+\end{equation}
+Then,the center-surround histogram feature f$_h$( x;I) is defined as a sum of spatially weighted distances:
+\begin{equation}
+f_h(x,I)  \propto \sum_{\{x'|x\epsilon R^*(x')\}} w_{xx'} \chi^2(R^*(x'),R^*_S(x'))
+\end{equation} 
+where R*(x') is the rectangle centered at x' and containing the pixel x .\\
+\begin{figure}[h!]
+\center
+\begin{tabular}{cccc}
+\includegraphics[scale=0.45]{77.jpg} 
+& \includegraphics[scale=0.337]{77csh.jpg}
+&
+\includegraphics[scale=0.56]{image.jpg} & \includegraphics[scale=0.56]{imagecsh.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{Images and Their Center Surround Histogram Features}
+\end{figure}
+
+Hence, this method ensures that each pixel in the vicinity of the most distinct rectangle inherits weight in the map, proportional to the distinctness of the rectangle. Hence the more number of distinct rectangles a pixel is a part of, the more weight it acquires in the map and the greater opportunity to be a part of the salient object.\\
+The weight 
+\begin{equation}
+w_{xx'} = exp(-0.5 \sigma_{x'}^{-2} ||x-x'||^2)
+\end{equation} 
+is a Gaussian falloff weight with variance $\sigma_{x'}^{2}$ , which is set to one-third of the size of R*(x').\\
+This weight imposes a sense of distance from of the pixel in the vicinity, x' to that at the center of the distinct rectangle, x.
+The more the distance, the lesser proportion x' inherits from x.\\
+Finally, the feature map $f _h$(.,I) is also normalized to the range [0, 1 ]. \\
+
+\subsection*{Color Spacial Distribution - }
+This feature is proposed on the notion that the more widely a color is distributed in the image, the less possible it is that a salient object contains this color. 
+The global spatial distribution of a specific color can be used to describe the saliency of an object.
+
+To describe the spatial distribution of a specific color, the simplest approach is to compute the spatial variance of the color. \\
+The aimis to represent all colors in the image by Gaussian Mixture Models (GMMs) \{$w_c$,$\mu_c$,$\Sigma_c$\}$^C_{c=1}$, where \{$w_c$,$\mu_c$,$\Sigma_c$\} is the weight, the mean color, and the covariance matrix of the $c^{th}$ component \cite{patternrecognition}.\\
+\begin{enumerate}
+\item Initialize the means $\mu_k$, covariances $\Sigma_k$ and weight $w_k$, and evaluate the initial value of the log likelihood. \\
+The initialisation is done by K-means algorithm, which aims to partition the set of pixels in the given image into K clusters in which each observation belongs to the cluster with the nearest mean.
+We computed clusters for {\bf K=6}, initialised the covariances and weights for each cluster.
+
+Then, the  Gaussian Mixture Models are obtained as follows:
+
+\item {\bf Expectation }step. Evaluate the responsibilities using the current parameter values
+\begin{equation}
+\gamma(z_{nk}) = \frac {w_k{\bf  N}(x_n|\mu_k,\Sigma_k)}{\sum_{j=1}^K w_j {\bf  N}(x_n|\mu_j,\Sigma_j)}
+\end{equation} 
+$\gamma(z_{nk}) $  is the responsibility for pixel value n with colour label $x_n$ (refered to as $I_x$ later) and cluster(or colour component) value k.
+K is the total number of colour components.
+${\bf  N}(x_n|\mu_k,\Sigma_k)$  is the normal distribution pdf.
+
+
+\begin{figure}[h!]
+\begin{tabular}{cccc}
+%Images and their Multiscale output\\
+\includegraphics[scale=0.4]{280.jpg} 
+& \includegraphics[scale=0.3]{280csd.jpg}
+\hspace*{4pt}
+\includegraphics[scale=0.4]{3732.jpg} & \includegraphics[scale=0.3]{3732csd.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{Images and Their Color Spacial Distribution Output}
+\end{figure}
+
+\item {\bf Maximisation} step. Re-estimate the parameters using the current responsibilities.
+\begin{equation}
+\mu^{new}_k = \frac{1}{N_k} \sum^{N}_{n=1} \gamma(z_{nk}) x_n
+\end{equation} 
+\begin{equation}
+\Sigma^{new}_k = \frac{1}{N_k} \sum^{N}_{n=1} \gamma(z_{nk}) (x_n - \mu^{new}_k )(x_n - \mu^{new}_k )^T
+\end{equation} 
+\begin{equation}
+w_k^{new} = \frac {N_k}{N}
+\end{equation} 
+where
+\begin{equation}
+N_k = \sum ^N_{n=1} \gamma(z_{nk}) x_n
+\end{equation} 
+
+\item Evaluate the log likelihood
+\begin{equation}
+ln \  p({\bf X}|{\bf \mu},{\bf \Sigma},{\bf w}) =\sum ^N_{n=1} ln \{  \sum^K_{k=1} {\bf N}(x_n|\mu_k,\Sigma_k) \}
+\end{equation} 
+and check for convergencr of log likelihood.
+If the convergence criterion is not satisfied return to step 2.
+\end{enumerate}
+
+
+The resultant values of \{$w_k$,$\mu_k$,$\Sigma_k$\}$^K_{k=1}$  are taken to bethe required Gaussian Mixture Models (GMMs) \{$w_c$,$\mu_c$,$\Sigma_c$\}$^C_{c=1}$ where C=K.\\
+Each pixel is assigned to a color component with the probability:
+\begin{equation}
+p(c|I_x) = \frac {w_c{\bf  N}(I_x|\mu_c,\Sigma_c)}{\sum_{j=1}^C w_j {\bf  N}(x_n|\mu_j,\Sigma_j)}
+\end{equation} 
+
+Then, the horizontal variance $V_h$(c) of the spatial position for each color component c is
+\begin{equation}
+V_h(c) = \frac{1}{|X|_c} \sum_x p(c|I_x)  |x_h - M_h(c)|^2
+\end{equation} 
+
+\begin{equation}
+M_h(c) = \frac{1}{|X|_c} \sum_x p(c|I_x)  x_h
+\end{equation} 
+where $x_h$ is the x co-ordinate of the pixel x and 
+\begin{equation}
+|X|_c = \sum_x p(c|I_x) 
+\end{equation} 
+
+The vertical variance $V_v$(c) is similarly defined.
+The spatial variance of a component c is $V(c) = V_h(c) + V_v(c)$.\\
+$V(c)$ is normalized to range [0,1]. \\
+
+Note that the spatial variance of the color at the image corners or boundaries may also be small because the image is cropped from the whole scene. 
+Toreduce this artifact, a center-weighted, spatial-variance feature is defined as
+\begin{equation}
+f_s(x,I) \propto \sum_c p(c|I_x) (1-V(c))(1-D(c))
+\end{equation} 
+where 
+\begin{equation}
+D(c) = \sum_x p(c|I_x)  d_x
+\end{equation} 
+
+is the weight which assigns less importance to colors nearby image boundaries and is also normalized to [0,1].
+$d_x$ is the distance from pixel x to the image center.
+
+\section*{Dataset}
+We used the MSRA salient object database in the project. This database consists of two sets. \\
+One set consists of 20,000 images with images labelled by three users. The labelling was done by separately showing the image to an user and asking to enclose the salient object by a rectangle.\\
+The other set consists of highly consistent 5000 images. In these images the salient object is selected with no ambiguity. These images are labelled by 9 users. \\
+
+\subsection*{Labelling of Images }
+We took 500 labelled images from second set for training. Then we calculated label on the image
+\begin{equation}
+a_x =\frac{1}{M} \sum_{i = 1}^{M}a_{x}^{m}
+\end{equation}
+$M$ is number of users who have labelled the image.\\		 
+\begin{figure}[h!]
+\center
+\begin{tabular}{cc}
+\includegraphics[scale=0.5]{547.jpg} 
+& \includegraphics[scale=0.375]{547label.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{Image and User Labels}
+\end{figure}
+
+\section*{CRF Learning}
+Once the individual salient object feature for images are obtained,
+the feature maps obtained are to be incorporated in optimum combination
+inorder to gain maximum  consistency with the ground truth (or the probable mask).\\
+
+In CRF framework, The probability of a labeling configuration $M$, given the observation image $I$ , is modeled as a conditional distribution
+\begin{equation}
+P(M/I) = \frac{1}{Z}\exp{(-E(M/I))}
+\end{equation}
+where Z is the partition function. \\
+The energy $E(M/I)$ is defined as a linear combination of a set of static salient features, including a number of k unary features $f_1, f_2,\cdots, f_k$ and a pairwise feature $S(a_x,a_{x'},I)$,
+which can be viewed as a penalty term when adjacent pixels are assigned with different labels. The more similar the colors of the two pixels are, the less likely it is that they are assigned different labels.
+\begin{equation}
+E(M/I) = \sum _x\sum_{k=1}^{K} \lambda_{k}f_{k}(a_x,I) + \sum_{x,x'}S(a_x,a_{x'},I)
+\end{equation}
+where $\lambda_k$ is the weight of the kth feature and $x$ and $x'$ are two adjacent pixels. \\
+CRF maximizes the function below and gives the corresponding $\lambda$ values.
+\begin{equation}
+\{\lambda\} = arg max_{\lambda}\sum _n log(P(M^n|I^n,\lambda))
+\end{equation}
+
+\begin{figure}[h!]
+\center
+\begin{tabular}{cccc}
+\includegraphics[scale=0.4]{735.jpg} 
+& \includegraphics[scale=0.3]{735label.jpg}
+\hspace*{20pt}
+\includegraphics[scale=0.3]{735feature.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{Images, Labels and Calculated Output}
+\end{figure}
+This has been implemented with the help of the CRF2D module \cite{crflearning}.\\
+The module takes as input the feature data, and labelled data for training the images  and calculated weights for features.
+For {\bf400} training images the weights calculated were:- \\
+{\bf    0.0911, -0.1038, 0.0180, -0.1235, 0.9613, 0.1996, 0.1913, 0.4842}
+
+
+
+\subsection*{Evaluation of output}
+The validity of the output and its consistency with the user labels are measured by 
+\begin{enumerate}
+\item Precision
+\item Recall
+\item F-measure
+\end{enumerate}
+
+\begin{itemize}
+\item
+The salient object is enclosed in a rectangle with pixel values set to 1 and set the rest of the image to 0.
+
+\item
+Normalise the user labelled data, the pixel values of labels to the range of [0,1] so that the values of the calculated and labelled output remain in consistent with each other for further calculation.
+\end{itemize}
+Let $g_x$ is the pixel value of some pixel of the labelled image and $a_x$ is the pixel value of the calculated salient object.
+
+\subsection*{Precision}
+Precision represents the proportion of the computed output data that matches with the user labels.
+\begin{equation}
+precision = \frac{\sum_{x}g_xa_x}{\sum _x a_x}
+\end{equation}
+
+\subsection*{Recall}
+Recall represents the proportion of the user labelled data that matches with the computed output.
+\begin{equation}
+recall = \frac{\sum_{x}g_xa_x}{\sum _x g_x}
+\end{equation}
+
+\subsection*{F-measure}
+\begin{equation}
+F= \frac{1.5 * precision* recall }{0.5*precision + recall}
+\end{equation}
+
+\subsection*{Results}
+For {\bf400} training images the feature weights calculated by CRF learning were \\
+{\bf    0.0911, -0.1038, 0.0180, -0.1235, 0.9613, 0.1996, 0.1913, 0.4842}\\\\
+With {\bf10} training images, evaluationvalues obtained are\\
+{\bf
+Precision = 0.6198, 
+Recall = 0.8212, 
+F-measure = 0.6749
+}\\ \\
+For {\bf400} training images \\
+{\bf
+Precision = 0.5295,
+Recall = 0.8567,
+F-measure = 0.6068\\
+} 
+
+\section*{Limitations in Our implementation}
+
+When the object is quite similar to the background in color, contrast, pattern then lot of the background gets included in the reculting calculated object. And images where there are more than salient objects(or parts different from the background), all of them are included in the output along with the region between them.
+
+
+\begin{figure}[h!]
+\center
+\begin{tabular}{cccc}
+\includegraphics[scale=0.3]{0_5_5706.jpg} 
+& \includegraphics[scale=0.3]{0_5_5706_ground.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{From left: Original Image, Groung truth(in white). The object could not be differentiatied with the background and hence no salient object is reported.}
+\end{figure} 
+
+\begin{figure}[h!]
+\center
+\begin{tabular}{cccc}
+\includegraphics[scale=0.3]{0_5_5880.jpg} 
+& \includegraphics[scale=0.3]{0_5_5880_ground.jpg}
+& \includegraphics[scale=0.3]{0_5_5880_salient.jpg}
+\end{tabular}
+\label{tab:gt}
+\caption{From left: Original Image, Groung truth(in white), Our result (in black) }
+\end{figure} 
+
+
+
+\bibliographystyle{plain}
+\bibliography{author}
+\end{document}

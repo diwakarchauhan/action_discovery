@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+
+\bibitem{pami-Ben-ArieWPR02}
+Jezekiel Ben-Arie, Zhiqian Wang, Purvin Pandit, and ShyamSundar Rajaram.
+\newblock Human activity recognition using multidimensional indexing.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 24(8):1091--1104,
+  2002.
+
+\bibitem{heider}
+Fritz Heider and Marinne Simmel.
+\newblock An experimental study of apparant behaviour.
+\newblock 1940.
+
+\bibitem{kerr-cohen-08_wubble-world-lang-acquisition}
+W.~Kerr, P.~Cohen, and Y.H. Chang.
+\newblock Learning and playing in wubble world.
+\newblock In {\em Proceedings of the Fourth Artificial Intelligence for
+  Interactive Digital Entertainment Conference (AIIDE)}, 2008.
+
+\bibitem{naigles}
+Latitia Naigles.
+\newblock Children use syntax to learn verb meanings.
+\newblock {\em Journal of Child Language}, 1990.
+
+\bibitem{Rabiner89atutorial}
+Lawrence~R. Rabiner.
+\newblock A tutorial on hidden markov models and selected applications in
+  speech recognition.
+\newblock In {\em Proceedings of the IEEE}, pages 257--286, 1989.
+
+\bibitem{fhanimation}
+Rosannagh~Rogers Sarah J.~White, Devorah~Coniston and Uta Frith.
+\newblock Developing the frith-happe´ animations: A quick and objective test
+  of theory of mind for adults with autism.
+\newblock Technical report, Instute of Cognitive Neuroscience.
+
+\bibitem{satish-mukerjee-2008icdl}
+G.~Satish and A.~Mukerjee.
+\newblock Acquiring linguistic argument structure from multimodal input using
+  attentive focus.
+\newblock In {\em 7th IEEE International Conference on Development and Learning
+  (ICDL 2008)}, pages 43--48, 2008.
+
+\bibitem{TapiaIL04}
+Emmanuel~Munguia Tapia, Stephen~S. Intille, and Kent Larson.
+\newblock Activity recognition in the home using simple and ubiquitous sensors.
+\newblock In {\em Pervasive}, pages 158--175, 2004.
+
+\bibitem{VailVL07}
+Douglas~L. Vail, Manuela~M. Veloso, and John~D. Lafferty.
+\newblock Conditional random fields for activity recognition.
+\newblock In {\em AAMAS}, page 235, 2007.
+
+\end{thebibliography}

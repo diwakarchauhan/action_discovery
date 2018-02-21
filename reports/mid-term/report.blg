@@ -1,0 +1,21 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: report.aux
+The style file: plain.bst
+Database file #1: authorName.bib
+You're missing a field name---line 15 of file authorName.bib
+ :     
+ :     %type     = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "TapiaIL04"
+refers to entry "DBLP:conf/pervasive/2004", which doesn't exist
+A bad cross reference---entry "VailVL07"
+refers to entry "DBLP:conf/atal/2007", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/pervasive/2004"
+Warning--I didn't find a database entry for "DBLP:conf/atal/2007"
+Name 1 in "Sarah J. White, Devorah Coniston, Rosannagh Rogers, and Uta Frith" has a comma at the end for entry fhanimation
+while executing---line 1049 of file plain.bst
+Warning--empty journal in heider
+Name 1 in "Sarah J. White, Devorah Coniston, Rosannagh Rogers, and Uta Frith" has a comma at the end for entry fhanimation
+while executing---line 1090 of file plain.bst
+Warning--empty year in fhanimation
+(There were 5 error messages)
