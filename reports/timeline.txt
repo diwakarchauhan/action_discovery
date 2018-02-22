@@ -1,0 +1,19 @@
+Week 3: (22 Aug- 28 Aug)
+
+Image processing of data :
+	0- Read the paper by G Satish(2008)
+	1- Identify the two triangles and the frame(if present) in the image;
+	in identifying the triangles following methods were tried : 
+	    a) if the triangles are seperable by thein projection on x and y axis, then seperate them(this function doesn't give results when the 
+	    two triangls are either attached or projection of one triangle overshadows the other one).
+	2- Define the boundaries of the shapes and based on that calculate the positions(centroid) of
+	each object.
+	    a) After seperating the triangles, determine the edges and the coordinates of the vertices of the triangles. To determine the edges,
+	    calculate the kmean for the triangle data, this gives three centers forming smaller similar triangle to the original triangle. This
+	    result gives the gradient of the edges of the triangle, we can calculate x-axis intecept for all the points and create the 
+	    frquency histogram of x-axis intercept. gradients with maximum frequency range will belong to the edge with that gradient.
+	    (this gives bad results when the x-axis intercept is fairly large, becaust histograms don't have large frquency)
+	3- Get the location of the tip of the smaller triangle.
+	4- Wordnet database(find the all the similar verbs for the actions in the videos)
+	5- Read hindi word net data and identify the similar verbs as in step 4
+
