@@ -1,0 +1,23 @@
+0		10		
+11		27		there are two triangles
+28		54		the bigger red one the smaller blue one
+55		61		
+62		129		the red one is making the smaller one move in specific ways
+130		154		
+155		177		now the bigger one has gone outside
+178		190		
+191		210		he is inside again
+211		250		it is trying to corner the smaller one
+251		265		
+266		298		into doing some specific things
+299		331		may be go outside the box
+332		377		it is pushing the smaller triangle outside the box
+378		395		
+396		425		and from their tips 
+426		437		
+438		497		it can force the smaller one more easily
+498		520		the smaller one is roaming outside
+521		538		
+539		562		both the triangle are outside the box
+563		584		
+585		598		the bigger triangle is focing

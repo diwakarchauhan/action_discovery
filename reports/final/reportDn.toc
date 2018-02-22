@@ -1,0 +1,65 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Human Learning Process :}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Actions}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Psychological Videos :}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Completely Unsupervised Action Discovery :}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}User labeled Action Discovery :}{8}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Noun Discovery : }{8}{subsection.1.3.3}
+\contentsline {chapter}{\numberline {2}Vision and Language Dataset }{9}{chapter.2}
+\contentsline {section}{\numberline {2.1} Visual Database :}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Motion Data of objects in the video :}{9}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Language Database : }{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Collecting Commentaries :}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Transcribing to text :}{10}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Prelinguistic Image Schemata}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Agents in the psychological videos}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Extracting Objects: }{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Separation of the triangles}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Determination of the Rectangle }{14}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Feature Extraction}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Position of the Triangles : }{14}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Orientation of the Triangles : }{15}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Visibility of the triangle :}{15}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Feature vector :}{16}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Actions in the Visual Sequence :}{16}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Learning the HMM :}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Hierarchical Clustering :}{17}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Labelling the actions :}{17}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Learning HMM on labeled actions and Merging labels:}{17}{subsection.3.4.4}
+\contentsline {chapter}{\numberline {4}Language Association }{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Properties of Language :}{19}{section.4.1}
+\contentsline {paragraph}{lexicons : }{19}{section*.4}
+\contentsline {paragraph}{Phonology :}{19}{section*.5}
+\contentsline {paragraph}{Morphology :}{19}{section*.6}
+\contentsline {paragraph}{Syntax :}{19}{section*.7}
+\contentsline {section}{\numberline {4.2}Words Corpus :}{20}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Hindi Corpus :}{20}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}English Corpus :}{20}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Noun Learning :}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Attention Model for objects :}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Determining concepts :}{20}{subsection.4.3.2}
+\contentsline {paragraph}{(i)Concept-1}{21}{section*.8}
+\contentsline {paragraph}{(ii) Concept-2}{21}{section*.9}
+\contentsline {paragraph}{(iii) Concept-1 Not Concept-2}{21}{section*.10}
+\contentsline {paragraph}{(i) Not Concept-1 Concept-2}{21}{section*.11}
+\contentsline {paragraph}{(i)Concept-1 and Concept-2}{21}{section*.12}
+\contentsline {paragraph}{(i) Not Concept-1 Not Concept-2}{21}{section*.13}
+\contentsline {subsection}{\numberline {4.3.3}Association Measures :}{21}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Joint Probability Results for Concepts :}{22}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Analysis of JP Results in Both Languages :}{23}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Relative Frequency :}{24}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}Mutual Information : }{24}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}Analysis of MI Result in Both languages :}{26}{subsection.4.3.8}
+\contentsline {section}{\numberline {4.4}Verb Learning }{26}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Completely Unsupervised Method}{26}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Verb Learning Results :}{26}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}User labeled Unsupervised Method}{27}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Comparison of Results in both Languages with Both Methods : }{28}{subsection.4.4.4}
+\contentsline {chapter}{\numberline {5}Conclusion}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Further Work :}{29}{section.5.1}
+\contentsline {chapter}{\numberline {A}Hough Transform}{30}{appendix.A}
+\contentsline {chapter}{\numberline {B}Hidden Markov Models}{31}{appendix.B}
+\contentsline {section}{\numberline {B.1}Learning an HMM }{31}{section.B.1}
+\contentsline {section}{\numberline {B.2}Loglikelihood :}{31}{section.B.2}
+\contentsline {section}{\numberline {B.3}Distances Between HMMs}{31}{section.B.3}

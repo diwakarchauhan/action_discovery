@@ -1,0 +1,25 @@
+466.0		484.0		pushed the smaller triangle out
+438.0		469.0		
+470.0		483.0		now the smaller triangle is outside
+169.0		194.0		and the smaller triangle is still inside
+520.0		548.0		both of the triangles are outside the box
+416.0		425.0		
+457.0		490.0		and now the smaller one is roaming outside
+374.0		384.0		
+455.0		495.0		
+121.0		132.0		they are roaming
+372.0		437.0		and he gets success in pushing him out
+438.0		479.0		the smaller triangle tries to roam around outside
+480.0		493.0		
+378.0		395.0		
+438.0		497.0		it can force the smaller one more easily
+521.0		538.0		
+167.0		198.0		and the big triangle is going outside the box
+368.0		404.0		the small triangle to go outside
+460.0		480.0		
+163.0		198.0		the red triangle is outside
+441.0		495.0		seems like the red triangle is stuck at the door
+441.0		476.0		and now the blue object is trying to 
+477.0		494.0		
+367.0		392.0		so that it can win
+438.0		491.0		so that it cannot enter into the big box ring basically

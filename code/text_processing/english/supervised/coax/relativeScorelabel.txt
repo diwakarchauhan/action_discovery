@@ -1,0 +1,36 @@
+we:1.0	see:1.0	which:1.0	themselves:1.0	them:1.0	touching:1.0	tips:1.0	align:1.0	enclosed:1.0	triangles:0.666666666667	their:0.666666666667	
+
+
+
+chasing:1.0	dancing:1.0	
+
+
+
+
+
+
+
+still:1.0	
+
+
+
+in:1.0	funny:1.0	ways:1.0	back:1.0	call:1.0	corner:1.0	
+
+
+
+come:1.0	
+
+
+
+pushing:1.0	push:1.0	go:1.0	him:1.0	win:1.0	waiting:1.0	arena:1.0	but:1.0	drag:1.0	moving:1.0	not:1.0	ahead:1.0	so:0.75	it:0.714285714286	out:0.615384615385	
+
+
+
+some:1.0	blocks:1.0	completely:1.0	on:1.0	explore:1.0	reason:1.0	roam:1.0	
+
+
+
+fighting:1.0	exploring:1.0	circling:1.0	have:1.0	interacting:1.0	touched:1.0	enjoying:1.0	started:1.0	after:1.0	connected:1.0	larger:1.0	focing:1.0	they:0.8	both:0.666666666667	
+
+
+

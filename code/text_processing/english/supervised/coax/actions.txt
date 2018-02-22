@@ -1,0 +1,9 @@
+﻿45		93		circling
+134		150		going
+151		175		rotating
+176		195		coming
+210		230		hit
+235		249		pull
+310		410		push
+415		487		block
+557		598		cirling,rotate

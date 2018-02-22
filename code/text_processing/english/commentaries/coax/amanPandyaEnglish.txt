@@ -1,0 +1,19 @@
+1		26		two triangles are in a box
+27		45		there is an open box
+46		67		their tips are touching and 
+68		83		the triangles  are rotating
+84		107		with respect to each other
+108		164		now they are separated and the bigger triangle moves out of the box
+165		205		it is sort of waiting for the smaller triangle to come out
+206		216		but it is not coming out
+217		247		the smaller triangle seems very reluctant to come out
+248		283		it is not even letting the bigger triangle to move out of the box
+284		356		the bigger triangle now seems to be pushing the smaller triangle out of the box
+357		383		and it is waiting for him to go ahead
+384		409		but is very reluctant to not moving out
+410		465		now very forcefully the bigger triangle seems to have 
+466		484		pushed the smaller triangle out
+485		527		and the smaller triangle is roaming around the region
+528		558		the bigger triangle seems to be happy
+559		585		they are connected to each other
+586		598		

@@ -1,0 +1,71 @@
+#This script calculates the join probability P(O,w) for
+# P(O, w) = P(O|w)/P(w) = frames for which O is in focus and w is uttered/total frames
+# Input The file contains the frame tag with commentaries when concept happens
+#
+
+##############################################################################
+
+def main() :
+    fileName = raw_input("Enter the file name of the concept :\n")
+    fileName = "concept1.txt"
+    filePath = fileName.replace(".txt", "/")
+    numFrames = raw_input("Enter the total number of frames :\n")
+    numFrames = 498.0 #for coaxing video only
+    wordFile = raw_input("Enter the name of file containing the words :\n")
+    wordFile = 'grams/coax/gram1.txt' #file containing all words with frequency
+
+    wfile = open(wordFile).readlines()
+    cFilePath = filePath +'coax/' + fileName
+    print cFilePath
+    f = open(cFilePath, "r")
+    lines = f.readlines()
+    jp = []
+    print "total lines"
+    print len(lines)
+    for wordLine in wfile :
+        wordLine = wordLine.decode('utf-8')
+        wordLine = wordLine.replace(u'\ufeff', "")
+        wordLine = wordLine.split(" ")
+        length = 0.0
+        for line in lines :
+            line = line.decode('utf-8')
+            line = line.split('\t\t')
+            #print len(line)
+            if (len(line) > 2) and line[2] != '\n':
+                words = line[2].split()
+                if wordLine[0] in words :
+                    length = length + float(line[1])  - float(line[0]) + 1
+
+        frac = length/numFrames
+        jp.append((frac, wordLine[0]))
+    jp1 = sorted(jp, reverse=True)
+    #print jp
+    numWords = len(jp)
+    i = 0
+    outFile = open(filePath +'coax/' +'jointProb.txt', "w")
+    outFile1 = open(filePath +'coax/' +'jointProbSorted.txt', "w")
+    print outFile
+    if outFile == None :
+        print "unable to open the file\n"
+        quit()
+
+    print numWords
+    while(i < numWords) :
+        print "printing jp[i]:\n"
+        print jp[i]
+        outFile.write((jp[i][1] + " " + str(jp[i][0]) + "\n").encode('utf-8'))
+        print "printing jp1[i]:\n"
+        print jp1[i]
+        outFile1.write((jp1[i][1] + " " + str(jp1[i][0]) + "\n").encode('utf-8'))
+        i = i + 1
+    outFile.close()
+    
+    #outFile1 = open(filePath +'coax/' +'jointProbSorted.txt', "w")
+    #i = 0
+    #while(i < numWords) :
+    #    outFile1.write((jp1[i][1] + " " + str(jp1[i][0]) + "\n").encode('utf-8'))
+    #    i = i + 1
+    outFile1.close()
+    
+if __name__ == "__main__" :
+    main()

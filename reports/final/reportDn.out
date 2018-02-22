@@ -1,0 +1,54 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{Human Learning Process :}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Actions}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Psychological Videos :}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.3.1}{Completely Unsupervised Action Discovery :}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.2}{User labeled Action Discovery :}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.3}{Noun Discovery : }{section.1.3}
+\BOOKMARK [0][-]{chapter.2}{Vision and Language Dataset }{}
+\BOOKMARK [1][-]{section.2.1}{ Visual Database :}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{Motion Data of objects in the video :}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{Language Database : }{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Collecting Commentaries :}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Transcribing to text :}{section.2.2}
+\BOOKMARK [0][-]{chapter.3}{Prelinguistic Image Schemata}{}
+\BOOKMARK [1][-]{section.3.1}{Agents in the psychological videos}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Extracting Objects: }{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{Separation of the triangles}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.2}{Determination of the Rectangle }{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{Feature Extraction}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Position of the Triangles : }{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Orientation of the Triangles : }{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Visibility of the triangle :}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.4}{Feature vector :}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Actions in the Visual Sequence :}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.4.1}{Learning the HMM :}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{Hierarchical Clustering :}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{Labelling the actions :}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.4}{Learning HMM on labeled actions and Merging labels:}{section.3.4}
+\BOOKMARK [0][-]{chapter.4}{Language Association }{}
+\BOOKMARK [1][-]{section.4.1}{Properties of Language :}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Words Corpus :}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Hindi Corpus :}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{English Corpus :}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Noun Learning :}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Attention Model for objects :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Determining concepts :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Association Measures :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{Joint Probability Results for Concepts :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.5}{Analysis of JP Results in Both Languages :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.6}{Relative Frequency :}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.7}{Mutual Information : }{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.8}{Analysis of MI Result in Both languages :}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Verb Learning }{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Completely Unsupervised Method}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Verb Learning Results :}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{User labeled Unsupervised Method}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Comparison of Results in both Languages with Both Methods : }{section.4.4}
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}
+\BOOKMARK [1][-]{section.5.1}{Further Work :}{chapter.5}
+\BOOKMARK [0][-]{appendix.A}{Hough Transform}{}
+\BOOKMARK [0][-]{appendix.B}{Hidden Markov Models}{}
+\BOOKMARK [1][-]{section.B.1}{Learning an HMM }{appendix.B}
+\BOOKMARK [1][-]{section.B.2}{Loglikelihood :}{appendix.B}
+\BOOKMARK [1][-]{section.B.3}{Distances Between HMMs}{appendix.B}

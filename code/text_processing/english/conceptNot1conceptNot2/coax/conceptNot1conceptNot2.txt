@@ -1,0 +1,9 @@
+599.0		619.0		dances around them
+426.0		437.0		
+599.0		619.0		and rotating outside
+599.0		616.0		attached by
+617.0		634.0		
+635.0		661.0		vertex and rotating 
+430.0		440.0		
+599.0		626.0		the first one can go in the box
+417.0		437.0		the big object blocks the small object 

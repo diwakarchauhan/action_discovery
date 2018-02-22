@@ -1,0 +1,151 @@
+46.0		67.0		their tips are touching and 
+68.0		83.0		the triangles  are rotating
+84.0		107.0		with respect to each other
+108.0		164.0		now they are separated and the bigger triangle moves out of the box
+165.0		205.0		it is sort of waiting for the smaller triangle to come out
+206.0		216.0		but it is not coming out
+284.0		356.0		the bigger triangle now seems to be pushing the smaller triangle out of the box
+384.0		409.0		but is very reluctant to not moving out
+410.0		465.0		now very forcefully the bigger triangle seems to have 
+466.0		484.0		pushed the smaller triangle out
+485.0		527.0		and the smaller triangle is roaming around the region
+528.0		558.0		the bigger triangle seems to be happy
+559.0		585.0		they are connected to each other
+586.0		598.0		
+106.0		154.0		the side of the inner square is cut
+206.0		235.0		and it is coming again
+236.0		250.0		
+390.0		437.0		and it has pushed it outside
+438.0		469.0		
+470.0		483.0		now the smaller triangle is outside
+484.0		534.0		and the bigger triangle is also outside now
+535.0		543.0		
+544.0		598.0		now their vertices have touched
+66.0		114.0		both of them are trying to push each other
+115.0		138.0		
+139.0		168.0		the bigger triangle is now outside the box 
+169.0		194.0		and the smaller triangle is still inside
+195.0		217.0		
+242.0		316.0		the smaller triangle is trying to push it outside the box
+374.0		412.0		
+413.0		468.0		the smaller triangle is outside the box and the bigger triangle is still inside the box
+469.0		519.0		
+520.0		548.0		both of the triangles are outside the box
+549.0		563.0		and they are playing around
+564.0		598.0		
+85.0		123.0		they are in a semi closed box
+124.0		185.0		and now one of the bigger triangle has gone outside
+186.0		210.0		and it is trying to come back in
+325.0		351.0		then it is pushing the smaller one out
+392.0		415.0		the smaller one has again come inside
+416.0		425.0		
+457.0		490.0		and now the smaller one is roaming outside
+491.0		526.0		and now the bigger one goes outside
+527.0		567.0		and they are again interacting and 
+568.0		590.0		circling around each other
+591.0		598.0		
+72.0		91.0		which has two triangles enclosed
+92.0		133.0		one side of the rectangle has a sort of an opening
+134.0		186.0		the two triangles seem to be dancing and chasing each other
+187.0		203.0		
+204.0		229.0		they seem to be rotating in funny ways
+294.0		340.0		
+341.0		373.0		so here the bigger triangle is pushing the smaller one 
+374.0		384.0		
+385.0		401.0		out of the rectangle
+402.0		428.0		
+472.0		503.0		
+504.0		529.0		and it is exploring the bigger rectangle
+530.0		561.0		
+562.0		598.0		and then larger rectangle
+51.0		57.0		here we can see that
+58.0		102.0		two triangles one small and one big are playing in an arena
+103.0		130.0		they are confined within a space
+131.0		182.0		so now the bigger one comes out
+183.0		228.0		and he is trying to call the smaller one out
+387.0		428.0		and now the smaller one comes out
+455.0		495.0		
+496.0		509.0		area outside the arena
+510.0		598.0		and after exploring they both started playing outside and enjoying
+48.0		85.0		both are playing with each other inside the box
+86.0		95.0		
+105.0		120.0		 
+121.0		132.0		they are roaming
+133.0		155.0		the small triangle is roaming around
+179.0		188.0		
+189.0		236.0		and tries to pull the smaller triangle outside
+237.0		246.0		
+247.0		292.0		and the still the smaller triangle is inside the box
+293.0		361.0		and he tries to push the smaller triangle outside again
+372.0		437.0		and he gets success in pushing him out
+438.0		479.0		the smaller triangle tries to roam around outside
+480.0		493.0		
+494.0		537.0		and get acquainted with the surroundings over there
+538.0		579.0		now both the triangles stay outside
+580.0		598.0		
+55.0		61.0		
+62.0		129.0		the red one is making the smaller one move in specific ways
+130.0		154.0		
+178.0		190.0		
+191.0		210.0		he is inside again
+332.0		377.0		it is pushing the smaller triangle outside the box
+378.0		395.0		
+396.0		425.0		and from their tips 
+438.0		497.0		it can force the smaller one more easily
+498.0		520.0		the smaller one is roaming outside
+521.0		538.0		
+539.0		562.0		both the triangle are outside the box
+563.0		584.0		
+585.0		598.0		the bigger triangle is focing
+64.0		78.0		
+79.0		119.0		the triangles are touching each other and rotating
+120.0		138.0		
+139.0		166.0		the smaller triangle is moving around 
+167.0		198.0		and the big triangle is going outside the box
+199.0		250.0		
+344.0		367.0		the big triangle is trying to push
+368.0		404.0		the small triangle to go outside
+405.0		435.0		
+460.0		480.0		
+481.0		513.0		and it is moving around very slowly
+514.0		598.0		and big triangle is now interacting with the small triangle
+69.0		120.0		and right now there are two triangle inside
+121.0		162.0		and they are attached by vertex and
+163.0		198.0		the red triangle is outside
+199.0		231.0		which is bigger and of red color
+289.0		317.0		stretch his one of the vertex
+318.0		345.0		
+346.0		384.0		red triangle is pushing the smaller triangle outside
+385.0		411.0		the smaller triangle is of blue color
+412.0		440.0		
+441.0		495.0		seems like the red triangle is stuck at the door
+496.0		537.0		the blue triangle is outside
+538.0		572.0		the red triangle is outside the door
+573.0		598.0		and now they both are
+44.0		75.0		they both are fighting to remain in a box
+76.0		118.0		and they both want to remain in the box
+119.0		136.0		
+137.0		171.0		the red object tries to 
+172.0		207.0		turn the blue object by moving outside the box
+208.0		244.0		so that the blue object follows him
+245.0		282.0		but this strategy does not work for him
+283.0		323.0		so he tries to move up
+324.0		338.0		
+339.0		377.0		drag out push out the blue object
+378.0		429.0		using the virtue of his size
+441.0		476.0		and now the blue object is trying to 
+477.0		494.0		
+495.0		514.0		taunt the red object
+515.0		548.0		and they both are now outside the box
+549.0		598.0		and they both are fighting so that 
+42.0		80.0		both are fighting to stay in a big box
+81.0		109.0		which is sort of ring
+110.0		158.0		and this is a game which they are playing
+236.0		255.0		and comes out of the box
+367.0		392.0		so that it can win
+393.0		416.0		
+438.0		491.0		so that it cannot enter into the big box ring basically
+492.0		520.0		the small object tries to 
+521.0		560.0		
+561.0		576.0		both are fighting
+577.0		598.0		

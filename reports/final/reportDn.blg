@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: reportDn.aux
+The style file: plain.bst
+Database file #1: authorName.bib
+Warning--I didn't find a database entry for "CFLIT"
+Warning--I didn't find a database entry for "http://www.duboislc.org/EducationWatch/First100Words.html"
+Warning--empty journal in heider
+Warning--empty year in neema-mukerjee-10_discovering-concept-of-anaphora
+You've used 9 entries,
+            2118 wiz_defined-function locations,
+            554 strings with 5870 characters,
+and the built_in function-call counts, 2827 in all, are:
+= -- 273
+> -- 125
+< -- 3
++ -- 50
+- -- 40
+* -- 172
+:= -- 468
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 47
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 116
+empty$ -- 233
+format.name$ -- 40
+if$ -- 599
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 7
+newline$ -- 47
+num.names$ -- 18
+pop$ -- 60
+preamble$ -- 1
+purify$ -- 38
+quote$ -- 0
+skip$ -- 88
+stack$ -- 0
+substring$ -- 148
+swap$ -- 27
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 36
+warning$ -- 2
+while$ -- 27
+width$ -- 10
+write$ -- 93
+(There were 4 warnings)

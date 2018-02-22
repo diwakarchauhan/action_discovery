@@ -1,0 +1,64 @@
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	they:31.0	object:30.0	triangles:26.0	two:22.0	so:21.0	red:19.0	inside:19.0	big:18.0	has:15.0	around:14.0	other:13.0	each:13.0	be:11.0	tries:11.0	moving:8.0	comes:8.0	gone:7.0	vertex:7.0	seem:6.0	still:5.0	by:5.0	moves:3.0	goes:3.0	attached:3.0	dancing:2.0	separated:2.0	going:2.0	chasing:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	they:31.0	trying:31.0	object:30.0	triangles:26.0	both:25.0	in:24.0	a:23.0	small:23.0	two:22.0	there:21.0	so:21.0	inside:19.0	red:19.0	big:18.0	again:16.0	blue:16.0	has:15.0	he:15.0	other:13.0	each:13.0	be:11.0	an:10.0	come:10.0	playing:10.0	square:9.0	with:9.0	for:8.0	sort:8.0	moving:8.0	fighting:8.0	comes:8.0	gone:7.0	their:7.0	inner:7.0	which:7.0	rotating:6.0	seem:6.0	arena:6.0	back:6.0	still:5.0	stay:5.0	by:5.0	waiting:4.0	touching:4.0	remain:4.0	ring:3.0	them:3.0	vertices:3.0	want:2.0	respect:2.0	outer:2.0	going:2.0	themselves:2.0	chasing:2.0	align:2.0	dancing:2.0	turn:2.0	enclosed:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	box:47.0	now:44.0	bigger:41.0	of:39.0	they:31.0	trying:31.0	object:30.0	triangles:26.0	both:25.0	small:23.0	red:19.0	inside:19.0	blue:16.0	again:16.0	he:15.0	around:14.0	move:12.0	tries:11.0	be:11.0	seems:10.0	playing:10.0	for:8.0	very:8.0	gone:7.0	some:6.0	still:5.0	stay:5.0	have:3.0	door:3.0	interacting:3.0	forcefully:2.0	happy:2.0	completely:2.0	on:2.0	explore:2.0	reason:2.0	roam:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	trying:31.0	they:31.0	in:24.0	a:23.0	small:23.0	two:22.0	there:21.0	so:21.0	inside:19.0	red:19.0	big:18.0	has:15.0	he:15.0	around:14.0	rectangle:12.0	move:12.0	an:10.0	playing:10.0	him:9.0	not:9.0	roaming:9.0	for:8.0	sort:8.0	but:8.0	vertex:7.0	his:6.0	some:6.0	seem:6.0	still:5.0	by:5.0	ways:4.0	does:4.0	this:4.0	specific:4.0	into:3.0	game:3.0	like:3.0	attached:3.0	side:3.0	doing:2.0	within:2.0	right:2.0	best:2.0	even:2.0	space:2.0	things:2.0	strategy:2.0	finally:2.0	closed:2.0	opening:2.0	confined:2.0	pull:2.0	semi:2.0	work:2.0	stretch:2.0	letting:2.0	making:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	it:37.0	trying:31.0	object:30.0	in:24.0	small:23.0	there:21.0	so:21.0	red:19.0	blue:16.0	again:16.0	has:15.0	he:15.0	around:14.0	push:13.0	move:12.0	rectangle:12.0	be:11.0	tries:11.0	come:10.0	with:9.0	pushing:9.0	not:9.0	roaming:9.0	very:8.0	but:8.0	moving:8.0	gone:7.0	go:6.0	then:6.0	arena:6.0	back:6.0	does:4.0	over:4.0	refusing:4.0	goes:3.0	exploring:3.0	surroundings:2.0	area:2.0	slowly:2.0	get:2.0	may:2.0	taunt:2.0	acquainted:2.0	up:2.0	region:2.0	agree:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	of:39.0	it:37.0	trying:31.0	both:25.0	in:24.0	small:23.0	so:21.0	inside:19.0	red:19.0	blue:16.0	again:16.0	has:15.0	he:15.0	push:13.0	move:12.0	rectangle:12.0	be:11.0	tries:11.0	come:10.0	square:9.0	pushing:9.0	not:9.0	him:9.0	very:8.0	for:8.0	can:8.0	that:8.0	but:8.0	moving:8.0	fighting:8.0	gone:7.0	inner:7.0	vertex:7.0	go:6.0	then:6.0	his:6.0	arena:6.0	back:6.0	pushed:5.0	color:4.0	waiting:4.0	reluctant:4.0	win:2.0	best:2.0	stretch:2.0	finally:2.0	may:2.0	basically:2.0	ahead:2.0	up:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	they:31.0	trying:31.0	object:30.0	triangles:26.0	both:25.0	in:24.0	a:23.0	small:23.0	two:22.0	there:21.0	inside:19.0	big:18.0	blue:16.0	has:15.0	around:14.0	other:13.0	each:13.0	move:12.0	rectangle:12.0	be:11.0	tries:11.0	seems:10.0	playing:10.0	with:9.0	for:8.0	very:8.0	fighting:8.0	can:8.0	their:7.0	which:7.0	some:6.0	rotating:6.0	pushed:5.0	see:5.0	still:5.0	stay:5.0	touching:4.0	tips:4.0	this:4.0	remain:4.0	have:3.0	them:3.0	vertices:3.0	little:2.0	themselves:2.0	on:2.0	roam:2.0	reason:2.0	forcefully:2.0	align:2.0	i:2.0	slightly:2.0	enclosed:2.0	structure:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	they:31.0	trying:31.0	object:30.0	both:25.0	small:23.0	so:21.0	red:19.0	big:18.0	blue:16.0	again:16.0	has:15.0	he:15.0	around:14.0	other:13.0	each:13.0	push:13.0	rectangle:12.0	move:12.0	tries:11.0	playing:10.0	square:9.0	pushing:9.0	with:9.0	him:9.0	for:8.0	that:8.0	fighting:8.0	can:8.0	their:7.0	inner:7.0	here:7.0	then:6.0	go:6.0	arena:6.0	pushed:5.0	waiting:4.0	have:3.0	interacting:3.0	vertices:3.0	exploring:3.0	win:2.0	connected:2.0	larger:2.0	ahead:2.0	drag:2.0	circling:2.0	after:1.0	touched:1.0	started:1.0	enjoying:1.0	focing:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	trying:31.0	they:31.0	object:30.0	triangles:26.0	in:24.0	a:23.0	small:23.0	two:22.0	there:21.0	so:21.0	red:19.0	inside:19.0	big:18.0	blue:16.0	again:16.0	he:15.0	be:11.0	an:10.0	come:10.0	square:9.0	not:9.0	for:8.0	sort:8.0	moving:8.0	but:8.0	can:8.0	comes:8.0	inner:7.0	which:7.0	here:7.0	rotating:6.0	seem:6.0	back:6.0	see:5.0	by:5.0	color:4.0	ways:4.0	waiting:4.0	over:4.0	we:3.0	coming:3.0	open:2.0	call:2.0	squares:2.0	funny:2.0	turn:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	they:31.0	trying:31.0	object:30.0	triangles:26.0	both:25.0	small:23.0	there:21.0	so:21.0	big:18.0	blue:16.0	again:16.0	he:15.0	around:14.0	push:13.0	move:12.0	rectangle:12.0	be:11.0	tries:11.0	seems:10.0	pushing:9.0	not:9.0	roaming:9.0	with:9.0	but:8.0	here:7.0	then:6.0	does:4.0	over:4.0	refusing:4.0	goes:3.0	exploring:3.0	surroundings:2.0	happy:2.0	get:2.0	acquainted:2.0	region:2.0	drag:2.0	agree:2.0	also:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	smaller:62.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	it:37.0	object:30.0	so:21.0	red:19.0	big:18.0	around:14.0	seems:10.0	roaming:9.0	that:8.0	very:8.0	moving:8.0	can:8.0	arena:6.0	pushed:5.0	door:3.0	ring:3.0	into:3.0	like:3.0	area:2.0	slowly:2.0	taunt:2.0	basically:2.0	force:1.0	at:1.0	stuck:1.0	more:1.0	cannot:1.0	easily:1.0	enter:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	trying:31.0	they:31.0	object:30.0	triangles:26.0	both:25.0	so:21.0	red:19.0	inside:19.0	blue:16.0	again:16.0	around:14.0	each:13.0	other:13.0	rectangle:12.0	seems:10.0	come:10.0	playing:10.0	him:9.0	that:8.0	very:8.0	fighting:8.0	comes:8.0	vertex:7.0	then:6.0	stay:5.0	reluctant:4.0	refusing:4.0	door:3.0	interacting:3.0	follows:3.0	another:2.0	do:2.0	connected:2.0	larger:2.0	attaches:2.0	came:2.0	circling:2.0	corner:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	outside:56.0	one:48.0	out:45.0	now:44.0	of:39.0	small:23.0	inside:19.0	blue:16.0	again:16.0	has:15.0	rectangle:12.0	come:10.0	not:9.0	very:8.0	but:8.0	moving:8.0	comes:8.0	their:7.0	go:6.0	his:6.0	color:4.0	reluctant:4.0	tips:4.0	from:2.0	size:2.0	virtue:2.0	using:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	they:31.0	trying:31.0	triangles:26.0	both:25.0	in:24.0	small:23.0	a:23.0	two:22.0	there:21.0	inside:19.0	red:19.0	big:18.0	again:16.0	has:15.0	other:13.0	each:13.0	push:13.0	rectangle:12.0	move:12.0	an:10.0	playing:10.0	square:9.0	not:9.0	roaming:9.0	with:9.0	him:9.0	for:8.0	sort:8.0	but:8.0	inner:7.0	which:7.0	vertex:7.0	some:6.0	rotating:6.0	seem:6.0	arena:6.0	ways:4.0	touching:4.0	this:4.0	does:4.0	specific:4.0	remain:4.0	ring:3.0	into:3.0	them:3.0	game:3.0	like:3.0	side:3.0	things:2.0	another:2.0	doing:2.0	within:2.0	right:2.0	want:2.0	respect:2.0	outer:2.0	space:2.0	letting:2.0	strategy:2.0	closed:2.0	opening:2.0	even:2.0	confined:2.0	semi:2.0	work:2.0	making:2.0	attaches:2.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	it:37.0	trying:31.0	they:31.0	object:30.0	in:24.0	small:23.0	so:21.0	red:19.0	inside:19.0	big:18.0	blue:16.0	again:16.0	he:15.0	has:15.0	be:11.0	tries:11.0	seems:10.0	come:10.0	pushing:9.0	him:9.0	that:8.0	very:8.0	comes:8.0	gone:7.0	their:7.0	which:7.0	rotating:6.0	his:6.0	seem:6.0	back:6.0	pushed:5.0	color:4.0	ways:4.0	tips:4.0	reluctant:4.0	refusing:4.0	moves:3.0	coming:3.0	follows:3.0	do:2.0	from:2.0	completely:2.0	call:2.0	size:2.0	funny:2.0	virtue:2.0	using:2.0	pull:2.0	explore:2.0	came:2.0	blocks:1.0	gets:1.0	success:1.0	
+
+
+
+the:215.0	is:113.0	and:104.0	triangle:91.0	to:82.0	smaller:62.0	are:58.0	outside:56.0	one:48.0	box:47.0	out:45.0	now:44.0	bigger:41.0	of:39.0	they:31.0	object:30.0	triangles:26.0	both:25.0	in:24.0	a:23.0	small:23.0	two:22.0	there:21.0	so:21.0	red:19.0	inside:19.0	big:18.0	blue:16.0	around:14.0	rectangle:12.0	tries:11.0	an:10.0	playing:10.0	square:9.0	roaming:9.0	with:9.0	that:8.0	moving:8.0	fighting:8.0	can:8.0	their:7.0	inner:7.0	which:7.0	vertex:7.0	here:7.0	see:5.0	stay:5.0	by:5.0	tips:4.0	over:4.0	touching:4.0	this:4.0	remain:4.0	moves:3.0	we:3.0	attached:3.0	game:3.0	side:3.0	open:2.0	little:2.0	squares:2.0	separated:2.0	i:2.0	slightly:2.0	cut:1.0	
+
+
+

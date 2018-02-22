@@ -1,0 +1,76 @@
+#This function calculates the mutual information for the given word
+#The input to the script is the joint probability values
+# and the concept for which the mi is taken
+# Mutual information = (joint ptobability)*log((joint probability)/(probability of w))
+#
+
+#############################################################################
+import math
+
+def main() :
+    fileName = raw_input("Enter the file name of the concept :\n")
+    fileName = "concept1.txt"
+    filePath = fileName.replace(".txt", "/")
+    numFrames = raw_input("Enter the total number of frames :\n")
+    numFrames = 498.0 #for coaxing video only
+    cFilePath = filePath + 'coax/' + fileName
+    concept = open(cFilePath).readlines()
+    
+    wordFile = raw_input("Enter the name of file containing the words :\n")
+    wordFile = 'grams/coax/gram1.txt' #file containing all words with frequency
+    wFile = open(wordFile).readlines()
+    
+    
+    cFrames = 0.0
+    for line in concept :
+        line = line.split('\t\t')        
+        cFrames = cFrames + float(float(line[1]) - float(line[0])) + 1
+        
+    frac = cFrames/numFrames
+    
+    jFilePath = filePath + 'coax/' + 'jointProb.txt'
+    jProb = open(jFilePath).readlines()
+    
+    freq = 0.0
+    for line in wFile :
+        line = line.split()
+        freq = freq + float(line[1])
+    mInfo = []
+    i = 0
+    
+    for line in jProb :    
+        wFile[i] = wFile[i].split()
+        wFreq = float(wFile[i][len(wFile[i]) - 1])
+        freqFraq = wFreq/freq
+        line = line.split()
+        mi = float(line[1])*math.log(freqFraq/(freqFraq*frac), 2)
+        mInfo.append((line[0], mi))
+        i = i + 1
+        break
+        
+        mInfo1 = sorted(mInfo, reverse=True)
+        #print jp
+        numWords = len(mInfo)
+        i = 0
+        
+        outFile = open(filePath +'coax/' +'mutualInfo.txt', "w")
+        outFile1 = open(filePath +'coax/' +'mutualInfoSorted.txt', "w")
+        print outFile
+        
+        if not outFile :
+            print "unable to open the file\n"
+            quit()
+            
+        while(i < numWords) :
+            print "printing mInfo[i]:\n"
+            print mInfo[i]
+            outFile.write((mInfo[i][1] + " " + str(mInfo[i][0]) + "\n").encode('utf-8'))
+            print "printing mInfo1[i]:\n"
+            print mInfo1[i]
+            outFile1.write((mInfo1[i][1] + " " + str(mInfo1[i][0]) + "\n").encode('utf-8'))
+            i = i + 1
+        outFile.close()
+        outFile1.close()
+                    
+if __name__  == "__main__" :
+    main()

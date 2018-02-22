@@ -1,0 +1,15 @@
+0		50		
+51		57		here we can see that
+58		102		two triangles one small and one big are playing in an arena
+103		130		they are confined within a space
+131		182		so now the bigger one comes out
+183		228		and he is trying to call the smaller one out
+229		251		smaller one is refusing to do so
+252		301		so finally he is trying his best
+302		349		but the smaller one does not agree 
+350		386		so he is trying to push him outside the arena
+387		428		and now the smaller one comes out
+428		454		he is trying to explore
+455		495		
+496		509		area outside the arena
+510		598		and after exploring they both started playing outside and enjoying

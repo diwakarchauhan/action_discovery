@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {paragraph}{Unnumbered paragraph heading}{5}{section*.4}
+\contentsline {chapter}{\numberline {2}Prelinguistic Image Schemata}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Agents in the visual sequences}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Extracting Objects: }{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Separation of the triangles}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Determination of the Rectangle }{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Feature Extraction}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Position of the Triangles : }{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Orientation of the Triangles : }{8}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Visibility of the triangle :}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Feature vector :}{8}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Actions in the Visual Sequence :}{9}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Learning the HMM :}{9}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Hierarchical Clustering :}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Labelling the actions :}{10}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {A}Hough Transform}{11}{appendix.A}
+\contentsline {chapter}{\numberline {B}Hidden Markov Models}{12}{appendix.B}
+\contentsline {section}{\numberline {B.1}Learning an HMM }{12}{section.B.1}
+\contentsline {section}{\numberline {B.2}Loglikelihood :}{12}{section.B.2}
+\contentsline {section}{\numberline {B.3}Distances Between HMMs}{12}{section.B.3}

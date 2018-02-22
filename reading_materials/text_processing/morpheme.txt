@@ -1,0 +1,19 @@
+A morpheme means something, whereas syllables need not mean anything. A morpheme can be a single syllable, but it could also be several.
+
+Examples of single (free!) morphemes are: carpet, pug, rude. Free morphemes are complete words. And these are SINGLE morphemes because the unit doesn't make sense if you break it up any further (carpet is not a combination of car + pet - it has nothing to do with your car or your pet). So, definition: a morpheme is a word or word-part that has a specific meaning.
+
+Now, to make these into 2-morpheme words, we add another morpheme - this time a "bound morpheme". Bound morphemes mean something, too (like, "this is now and adverb!" or "pluralize this"), but you don't ever see them by themselves. They need another morpheme to latch onto. Examples of 2-morpheme words include: Carpet+ed, Rude+ly, or Pug+s. 
+
+So, -s, -ed and -ly are morphemes - they're word parts that mean something. Not every syllable means something, though. If you pull out part of a word, and the parts no longer mean what they used to, you have gone too far. Moreover, as a native speaker you have some say over whether certain things should be treated as morphemes. Obviously plurals count, as does any prefix or suffix you're sure you know the meaning of. But there are some things that can be analyzed in more than one way.
+
+You would probably break up "pitifully" like so:
+Piti-ful-ly
+Pity-full-adverb - in a way that is full of pity (or that fills one with pity).
+
+But would you split "happy" into two morphemes? "Hap" used to mean luck, but it doesn't anymore. So both of these could be right:
+
+Happy = a single morpheme, OR
+Happy = 2 morphemes, "Hap + y", i.e., Luck + adjective marker, "characterized by luck"
+
+
+Hope that's more helpful that annoying. I always prefer to have a few examples to work from.

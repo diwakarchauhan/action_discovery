@@ -1,0 +1,16 @@
+0		41		there are two triangles and two squares here
+42		105		there is an inner square and an outer square
+106		154		the side of the inner square is cut
+155		205		the bigger triangle is out of the inner square now
+206		235		and it is coming again
+236		250		
+251		268		and out again
+269		275		
+276		347		the bigger triangle is trying to push the 
+348		389		smaller triangle out of the inner square
+390		437		and it has pushed it outside
+438		469		
+470		483		now the smaller triangle is outside
+484		534		and the bigger triangle is also outside now
+535		543		
+544		598		now their vertices have touched

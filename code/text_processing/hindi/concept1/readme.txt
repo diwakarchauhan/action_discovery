@@ -1,0 +1,1 @@
+Here the concept is red triangle which is also the bigger one.

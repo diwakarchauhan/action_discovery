@@ -1,0 +1,18 @@
+1		28		
+29		63		there are two triangles inside the box
+64		78		
+79		119		the triangles are touching each other and rotating
+120		138		
+139		166		the smaller triangle is moving around 
+167		198		and the big triangle is going outside the box
+199		250		
+251		296		and the big triangle is trying to pull the small triangle
+297		343		the small triangle is refusing to move
+344		367		the big triangle is trying to push
+368		404		the small triangle to go outside
+405		435		
+436		459		the small triangle is now outside 
+460		480		
+481		513		and it is moving around very slowly
+514		598		and big triangle is now interacting with the small triangle
+599		619		and rotating outside

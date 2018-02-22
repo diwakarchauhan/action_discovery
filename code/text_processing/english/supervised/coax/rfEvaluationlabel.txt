@@ -1,0 +1,36 @@
+the:41.0	to:22.0	and:16.0	trying:10.0	are:8.0	both:6.0	of:5.0	other:4.0	box:4.0	each:4.0	triangles:3.0	their:3.0	has:3.0	that:3.0	rotating:2.0	inside:2.0	two:2.0	here:2.0	with:2.0	vertices:2.0	can:2.0	playing:2.0	we:1.0	see:1.0	which:1.0	themselves:1.0	them:1.0	touching:1.0	tips:1.0	align:1.0	enclosed:1.0	
+
+
+
+the:41.0	to:22.0	and:16.0	object:8.0	other:4.0	each:4.0	be:3.0	tries:3.0	red:3.0	triangles:3.0	two:2.0	seem:2.0	chasing:1.0	dancing:1.0	
+
+
+
+the:41.0	to:22.0	triangle:20.0	is:20.0	out:13.0	outside:11.0	now:9.0	object:8.0	one:6.0	of:5.0	bigger:5.0	has:3.0	tries:3.0	red:3.0	square:2.0	gone:2.0	inner:2.0	
+
+
+
+the:41.0	triangle:20.0	is:20.0	and:16.0	smaller:15.0	inside:2.0	still:1.0	
+
+
+
+the:41.0	to:22.0	is:20.0	and:16.0	smaller:15.0	out:13.0	trying:10.0	it:7.0	one:6.0	they:5.0	be:3.0	he:3.0	rotating:2.0	in:2.0	seem:2.0	comes:2.0	funny:1.0	ways:1.0	back:1.0	call:1.0	corner:1.0	
+
+
+
+the:41.0	to:22.0	triangle:20.0	and:16.0	smaller:15.0	out:13.0	of:5.0	box:4.0	very:2.0	seems:2.0	comes:2.0	reluctant:2.0	come:1.0	
+
+
+
+the:41.0	to:22.0	is:20.0	triangle:20.0	and:16.0	smaller:15.0	out:13.0	outside:11.0	trying:10.0	now:9.0	object:8.0	it:7.0	one:6.0	small:5.0	bigger:5.0	of:5.0	big:4.0	pushing:4.0	box:4.0	so:4.0	push:4.0	that:3.0	he:3.0	has:3.0	red:3.0	move:2.0	pushed:2.0	square:2.0	go:2.0	blue:2.0	for:2.0	inner:2.0	reluctant:2.0	rectangle:2.0	can:2.0	then:2.0	very:2.0	here:2.0	him:2.0	win:1.0	waiting:1.0	arena:1.0	but:1.0	drag:1.0	moving:1.0	not:1.0	ahead:1.0	
+
+
+
+the:41.0	to:22.0	is:20.0	triangle:20.0	and:16.0	smaller:15.0	out:13.0	outside:11.0	trying:10.0	now:9.0	object:8.0	small:5.0	big:4.0	tries:3.0	be:3.0	he:3.0	gone:2.0	move:2.0	pushed:2.0	blue:2.0	for:2.0	seems:2.0	around:2.0	some:1.0	blocks:1.0	completely:1.0	on:1.0	explore:1.0	reason:1.0	roam:1.0	
+
+
+
+the:41.0	to:22.0	is:20.0	triangle:20.0	and:16.0	outside:11.0	now:9.0	are:8.0	both:6.0	they:5.0	bigger:5.0	small:5.0	other:4.0	big:4.0	so:4.0	each:4.0	their:3.0	that:3.0	rectangle:2.0	then:2.0	around:2.0	with:2.0	vertices:2.0	fighting:2.0	playing:2.0	exploring:1.0	circling:1.0	have:1.0	interacting:1.0	touched:1.0	enjoying:1.0	started:1.0	after:1.0	connected:1.0	larger:1.0	focing:1.0	
+
+
+

@@ -1,0 +1,1 @@
+Concept2 refers to the blue triangle which is the smaller one.
